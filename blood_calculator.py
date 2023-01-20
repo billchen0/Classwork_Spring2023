@@ -90,5 +90,9 @@ def chol_analysis(chol_int):
 
     return answer
 
+def chol_output(chol_value, chol_analy):
+    print(f'The Total Cholestoral result of {chol_value} is considered {chol_analy}')
+    return 
+
     
 interface()
