@@ -80,6 +80,15 @@ def chol_input():
     chol_value = int(input('Enter the total cholestoral result: '))
     return chol_value
 
+def chol_analysis(chol_int):
+    if (chol_int < 200):
+        answer = 'Normal'
+    if (200 <= chol_int <= 239):
+        answer = 'Borderline High'
+    if (chol_int >= 240):
+        answer = 'High'
+
+    return answer
 
     
 interface()
