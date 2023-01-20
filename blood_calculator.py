@@ -75,6 +75,8 @@ def LDL_output(LDL_value, LDL_analy):
 
 def chol_driver():
     chol_in = chol_input()
+    chol_analy = chol_analysis(chol_in)
+    chol_output(chol_in, chol_analy)
 
 def chol_input():
     chol_value = int(input('Enter the total cholestoral result: '))
