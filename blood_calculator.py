@@ -18,7 +18,8 @@ def interface():
 
 def HDL_driver():
     HDL_in = HDL_input()
-    HDL_result = HDL_analysis(HDL_in)
+    HDL_analy = HDL_analysis(HDL_in)
+    HDL_output(HDL_in, HDL_analy)
     
 
 def HDL_input():
@@ -35,5 +36,9 @@ def HDL_analysis(HDL_int):
         answer = 'Low'
 
     return answer
+
+def HDL_output(HDL_value, HDL_analy):
+    print(f'The HDL result of {HDL_value} is considered {HDL_analy}')
+    return
     
 interface()
