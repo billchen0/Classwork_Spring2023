@@ -6,6 +6,7 @@ def interface():
         print('Options:')
         print('1 - HDL')
         print('2 - LDL')
+        print('3 - Cholesterol')
         print('9 - Quit')
 
         choice = input('Select an option: ')
@@ -16,6 +17,8 @@ def interface():
             HDL_driver()
         elif choice == '2':
             LDL_driver()
+        elif choice == '3':
+            chol_driver()
     
     print('Program Ending')
 
@@ -69,6 +72,9 @@ def LDL_analysis(LDL_int):
 def LDL_output(LDL_value, LDL_analy):
     print(f'The LDL result of {LDL_value} is considered {LDL_analy}')
     return 
+
+def chol_driver():
+    pass
 
 
 
