@@ -1,3 +1,6 @@
+print('This is the blood_calculator.py file')
+print(f'Python think this is called {__name__}')
+
 def interface():
     print('Blood Calculator')
     keep_running = True
@@ -96,5 +99,5 @@ def chol_output(chol_value, chol_analy):
     print(f'The Total Cholestoral result of {chol_value} is considered {chol_analy}')
     return 
 
-    
-interface()
+if __name__ == '__main__':
+    interface()
