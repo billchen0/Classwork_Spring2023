@@ -15,6 +15,20 @@ def main_driver():
     print(db)
     print_directory(db, room_numbers)
 
+    found_test = find_test_value(db, 2, "LDL")
+    print(found_test)
+
+def find_test_value(db, mrn_to_find, test_name):
+    for patient in db:
+        if patient[1] == mrn_to_find:
+            for test in patient[3]:
+                if test[0] == test_name:
+                    print(test)
+                    return test[1]
+    
+    return False
+    
+
 def print_directory(db, room_numbers):
     for i, patient in enumerate(db):
         print(f"Patient {patient[0]} is in room {room_numbers[i]}")
