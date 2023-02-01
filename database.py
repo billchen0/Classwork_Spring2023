@@ -19,12 +19,12 @@ def main_driver():
     print(found_test)
 
 def find_test_value(db, mrn_to_find, test_name):
-    for patient in db:
-        if patient[1] == mrn_to_find:
-            for test in patient[3]:
-                if test[0] == test_name:
-                    print(test)
-                    return test[1]
+    patient = get_patient_entry(db, mrn_to_find)
+
+    for test in patient[3]:
+        if test[0] == test_name:
+            print(test)
+            return test[1]
     
     return False
     
