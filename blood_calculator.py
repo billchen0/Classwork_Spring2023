@@ -96,5 +96,5 @@ def chol_output(chol_value, chol_analy):
     print(f'The Total Cholestoral result of {chol_value} is considered {chol_analy}')
     return 
 
-    
-interface()
+if __name__ == "__main__":
+    interface()
