@@ -96,5 +96,12 @@ def chol_output(chol_value, chol_analy):
     print(f'The Total Cholestoral result of {chol_value} is considered {chol_analy}')
     return 
 
-    
-interface()
+def check_fever(input_list):
+    for temp in input_list:
+        if temp > 100.5: 
+            return True
+        
+    return False
+
+if __name__ == "__main__":
+    interface()
